@@ -1,8 +1,12 @@
 services:
-  app:
-    build: .
+  webui:
+    image: "ghcr.io/yummiii/sd-webui-forge-docker:latest"
     volumes:
       - "./data:/app/sd-webui"
+    ports:
+      - "7860:7860"
+    environment:
+      - "ARGS=--listen"
     deploy:
       resources:
         reservations:
