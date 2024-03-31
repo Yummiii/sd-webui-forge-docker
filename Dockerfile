@@ -10,5 +10,6 @@ RUN chmod +x /app/run.sh
 RUN useradd -m webui
 RUN chown -R webui:webui /app
 USER webui
+RUN mkdir /app/sd-webui
 
 ENTRYPOINT ["/app/run.sh"]
