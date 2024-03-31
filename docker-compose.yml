@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    volumes:
+      - "./data:/app/sd-webui"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
