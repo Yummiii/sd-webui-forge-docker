@@ -5,7 +5,7 @@ if [ ! -d "/app/sd-webui" ] || [ ! "$(ls -A "/app/sd-webui")" ]; then
 
   git clone https://github.com/lllyasviel/stable-diffusion-webui-forge.git /app/sd-webui
   chmod +x /app/sd-webui/webui.sh
-  
+  cd /app/sd-webui
   exec /app/sd-webui/webui.sh $ARGS
 else
   echo "Files found, starting..."
