@@ -2,7 +2,7 @@ A docker image for [Stable Diffusion WebUI Forge](https://github.com/lllyasviel/
 
 > [!WARNING]  
 > This Dockerfile is based on on Cuda 12.3, which requires Nvidia driver >=545.
-> In [Ubuntu 22.04](https://github.com/Yummiii/sd-webui-forge-docker/issues/1) you can update it by running `ubuntu-drivers install nvidia:545` and a reboot. (Thanks [@casao](https://github.com/Casao))
+> In [Ubuntu 22.04](https://github.com/Yummiii/sd-webui-forge-docker/issues/1#issuecomment-2066840527) you can update it by running `ubuntu-drivers install nvidia:545` and a reboot. (Thanks [@casao](https://github.com/Casao))
 
 # Docker compose
 To run it, you will need the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
