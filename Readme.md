@@ -18,7 +18,7 @@ services:
     ports:
       - "7860:7860"
     environment:
-      - "ARGS=--listen"
+      - "ARGS=--listen --enable-insecure-extension-access" # Insecure extension access is required if you want to install extensions with the listen flag
     deploy:
       resources:
         reservations:

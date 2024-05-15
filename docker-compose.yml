@@ -7,7 +7,7 @@ services:
     ports:
       - "7860:7860"
     environment:
-      - "ARGS=--listen"
+      - "ARGS=--listen --enable-insecure-extension-access"
     deploy:
       resources:
         reservations:
