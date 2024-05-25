@@ -1,7 +1,7 @@
 services:
   webui:
-    # image: "ghcr.io/yummiii/sd-webui-forge-docker:latest"
-    build: .
+    image: "ghcr.io/yummiii/sd-webui-forge-docker:latest"
+    # build: .
     volumes:
       - "./data:/app/sd-webui"
     ports:
