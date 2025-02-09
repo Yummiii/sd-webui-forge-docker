@@ -12,7 +12,7 @@ Create a directory. Inside this directory, create a subdirectory named `data` (i
 ```YML
 services:
   webui:
-    image: "ghcr.io/yummiii/sd-webui-forge-docker:latest"
+    image: "ghcr.io/yummiii/sd-webui-forge-docker:cuda-12.4.1"
     volumes:
       - "./data:/app/sd-webui"
     ports:
